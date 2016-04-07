@@ -1,0 +1,116 @@
+body {
+	padding-left: 25px;
+	font-family: arial, sans-serif;
+	background-color: #cee3b9;
+	}
+
+h1, h2 {
+	font-family: 'Righteous', cursive;
+	color: #6c9f58;
+}
+
+h1 {
+	font-size: 200%;
+	letter-spacing: 0.1em;
+	text-shadow: 2px 2px 2px #666666;
+}
+
+a:link {
+	color: #245e34;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0e3619;
+}
+
+a:hover {
+	color: #38834c;
+	text-decoration: underline;
+	}
+
+div.text {
+	height: 400px;
+	width: 635px;
+	background: #ffffff;
+	opacity: 0.5;
+}
+
+img.left {
+width: 200;
+height: 133;
+margin-right: 2px;
+margin-top: 2px;
+}
+
+img.middle {
+width: 200;
+height: 133;
+margin-right: 2px;
+margin-left: 2px;
+margin-top: 2px;
+}
+
+img.right {
+width: 227;
+height: 133;
+margin-left: 2px;
+margin-top: 2px;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+ul.navigation li {
+	float: left;
+}
+
+ul.navigation li a {
+    display: inline-block;
+    color: #6c9f58;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+ul.navigation li a:hover {
+	background-color: #666666;
+}
+
+ul.navigation li.icon {
+	display: none;
+}
+
+@media screen and (max-width:680px) {
+  ul.navigation li:not(:first-child) {display: none;}
+  ul.navigation li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.navigation.responsive {position: relative;}
+  ul.navigation.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.navigation.responsive li {
+    float: none;
+    display: inline;
+  }
+  
+  ul.navigation.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
