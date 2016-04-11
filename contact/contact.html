@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autumn Apsey's Porfolio</title>
+		<meta name="description"
+		content="Autumn Apsey's Portfolio" />
+		<meta name="keywords"
+		content="Autumn Apsey, portfolio, HTML, CSS" />
+		<meta name="robots"
+		content="nofollow" />
+		<meta name="author"
+		content="Autumn Apsey" />
+	<link href="../css/stylesheet.css" type="text/css" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<script src="../javascript/javascript.js"></script>
+
+<script>
+function upperMe() { 
+    document.getElementById("output").value = document.getElementById("input").value.toUpperCase(); 
+</script>
+
+
+
+</head>
+
+<body>
+	<h1>Autumn Apsey</h1>
+		<ul class="navigation">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../about/about.html">About</a></li>
+			<li><a href="contact/contact.html">Contact</a></li>
+			<li><a href="https://www.linkedin.com/in/autumnapsey">LinkedIn</a>
+			<li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="navFunction()">&#9776;</a> </li>
+		</ul>
+	<div class="text">
+	<h2>Contact:</h2>
+	<fieldset><legend>Contact Autumn</legend>
+	<form action="" method="post">
+		<p><label>Your Name:<input type="text" name="name" size="20" maxlength="40" /></label></p>
+		<p><label>Your Email:<input type="text" name="email" size="20" maxlength="50" /></label></p>
+		<p><label>Message:<br /><textarea name="message" cols="40" rows="4">Your message here.</textarea></label></p>
+		<p><input type="submit" name="send" value="Send Message" /></p>
+		<br />
+
+
+<p>
+Enter lowercase letters for conversion to uppercase:<br /> 
+<form name="converter"> 
+<input type="text" name="input" id="input" 
+value="sample" onchange="upperMe()" /><br /> 
+<input type="text" name="output" id="output" value="" /> 
+</form>
+</p>
+
+	</fieldset>
+	</div>
+
+	<img src="../images/garden.jpg" class="left" />
+	<img src="../images/purpleflower.jpg" class="middle" />
+	<img src="../images/caterpillar.jpeg" class="right" />
+
+</body>
+</html>
